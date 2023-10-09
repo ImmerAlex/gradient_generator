@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-family: lato;
+}
+
+#GradientBox {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    background-image: linear-gradient(315deg, #ff0000 10%, #0400ff 100%);
+    margin-bottom: 30px;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+#RangeRotate {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#RangeRotate::before {
+    content: attr(data-degre);
+    position: absolute;
+    top: -5px;
+    right: -60px;
+    background-color: black;
+    color: #F1F1F1;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ContentColor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#ColorOne, #ColorTwo {
+    position: relative;
+    height: 40px;
+    width: 60px;
+    background-color: none;
+    border: none;
+}
+
+#ColorOne::before {
+    content: attr(data-colorOne);
+    position: absolute;
+    top: 8px;
+    right: -65px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: #F1F1F1;
+}
+
+#ColorTwo::before {
+    content: attr(data-colorTwo);
+    position: absolute;
+    top: 8px;
+    left: -65px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: #F1F1F1;
+}
+
+.ContentParaOne {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.ContentParaTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+#RangePourcentOne, #RangePourcentTwo {
+    position: relative;
+    width: 95%;
+}
+
+#RangePourcentOne::before {
+    content: attr(data-pourcentGradientOne);
+    position: absolute;
+    top: -5px;
+    left: -50px;
+    background-color: black;
+    color: #F1F1F1;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#RangePourcentTwo::before {
+    content: attr(data-pourcentGradientTwo);
+    position: absolute;
+    top: -5px;
+    right: -50px;
+    background-color: black;
+    color: #F1F1F1;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ContentText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#TextGradient {
+    all: unset;
+    padding: 10px 30px;
+    background-color: black;
+    color: #F1F1F1;
+    border-radius: 5px;
+    font-size: 22px;
+    width: 780px;
+    text-align: center;
+}
+
+#Copy {
+    padding: 10px 20px;
+    background-color: black;
+    color: #F1F1F1;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}

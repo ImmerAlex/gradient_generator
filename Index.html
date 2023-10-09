@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <Title>Grandient Generator</Title>
+</head>
+
+<body>
+
+<div id="GradientBox"></div>
+
+<div class="Container">
+    <input id="RangeRotate" type="range" min="0" max="360" value="315" data-degre="315deg">
+
+    <div class="ContentColor">
+        <div class="ContentParaOne">
+            <input id="ColorOne" type="color" value="#FF0000" data-colorOne="#ff0000">
+            <input type="range" id="RangePourcentOne" min="0" max="100" value="10" data-pourcentGradientOne="10%">
+        </div>
+
+        <div class="ContentParaTwo">
+            <input id="ColorTwo" type="color" value="#0400ff" data-colorTwo="#0400ff">
+            <input type="range" id="RangePourcentTwo" min="0" max="100" value="100" data-pourcentGradientTwo="100%">
+        </div>
+    </div>
+</div>
+
+<div class="ContentText">
+    <input type="text" id="TextGradient" value="background-image: linear-gradient(315deg, #ff0000 10%, #0400ff 100%);">
+    <p id="Copy">Copy</p>
+</div>
+
+<script src="public/javaScript/main.js"></script>
+</body>
+</html>
